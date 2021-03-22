@@ -1,0 +1,136 @@
+/* the first line to add */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    to left bottom,
+    rgba(120, 177, 215, 1),
+    rgba(200, 102, 164, 0.25)
+  );
+}
+
+.btn {
+  position: relative;
+  padding: 15px 20px;
+ 
+  background: transparent;
+  text-transform: uppercase;
+  color: rgb(32, 36, 93);
+  outline: none;
+
+  cursor: pointer;
+  border-radius: 10px;
+  letter-spacing: 4px;
+}
+
+div.btnglass button::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: rgba(223, 47, 47, 0.9);
+  bottom: 0;
+  left: 0;
+  transition: 1s;
+}
+
+div.btnglass button:hover::after {
+  width: 100%;
+}
+
+img {
+  width: 25px;
+  position: relative;
+  margin-left: 120px;
+  border-radius: 50%;
+}
+#container {
+  background: white;
+  min-height: 80vh;
+  width: 100vh;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+}
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 5%;
+  right: 15%;
+}
+.circle2 {
+  bottom: 5%;
+  left: 10%;
+}
+
+.btnglass {
+  position: absolute;
+  margin-left: -27%;
+  left: 50%;
+  width: 80%;
+  bottom: 20%;
+}
+
+#value {
+  position: absolute;
+  margin-left: -2%;
+  left: 50%;
+  width: 80%;
+  bottom: 35%;
+}
+span {
+  font-size: 100px;
+  font-family: "Monoton", cursive;
+}
+button {
+  border-color: #2196f3;
+  margin-left: 25px;
+}
+
+button:hover {
+  border-color: #cbe0f1;
+  border-style: none;
+}
+
+p {
+  letter-spacing: 4px;
+  position: absolute;
+  margin-left: -17%;
+  left: 50%;
+  width: 80%;
+  bottom: 60%;
+  font-size: 60px;
+  font-family: "Monoton", cursive;
+}
+img {
+  position: absolute;
+  margin-left: -5%;
+  left: 50%;
+  width: 13%;
+  bottom: 75%;
+}

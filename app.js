@@ -8,7 +8,7 @@ var value = document.querySelector("#value");
 var btns = document.querySelectorAll(".btn");
 
 
-
+//lets loop through the buttons
 //lets use a forEach Loop which visits each item in our var btns that w selectd using querry selector all.
 
 btns.forEach(
